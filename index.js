@@ -8,10 +8,12 @@
          if (turn == 0)
          {
             button.innerHTML = "X";
+            button.style.color = "red";
          }
          else
          {
             button.innerHTML = "O";
+            button.style.color = "blue";
          }
 
          if (turn == 0)
@@ -24,7 +26,7 @@
          }
       }
 
-      const h1 = document.getElementById("h1");
+      const h1 = document.querySelector(".title");
 
       if (CheckWin() == "D")
       {
